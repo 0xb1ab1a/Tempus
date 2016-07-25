@@ -55,6 +55,8 @@ class Timestats():
             self.file.seek((day + day - 1)*7 - ending)
             self.file.write(time)
             print('Time added')
+        
+        self.total()
 
     def write_current(self, ending):
         day = datetime.today().weekday() + 1
